@@ -1,35 +1,36 @@
-import { format, parseISO } from 'date-fns';
+// import { format, parseISO } from 'date-fns';
 import { GetStaticProps } from 'next';
-import Link from 'next/link';
+import Image from 'next/image';
+// import Link from 'next/link';
 import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
-import { PostType } from '../types/post';
 
-type IndexProps = {
-  posts: PostType[];
-};
+// import { PostType } from '../types/post';
 
-export const Index = ({ posts }: IndexProps): JSX.Element => {
+// type IndexProps = {
+//   posts: PostType[];
+// }; { posts }: IndexProps
+
+export const Index = (): JSX.Element => {
   return (
     <Layout>
-      <h1>Home Page</h1>
-      <p>Next.js starter for your next blog or personal site. Built with:</p>
-      <ul className="list-disc pl-4 my-6">
-        <li>Next.js</li>
-        <li className="mt-2">Typescript</li>
-        <li className="mt-2">MDX</li>
-        <li className="mt-2">Tailwind CSS</li>
-      </ul>
+      <h1>Home</h1>
+      <div className='homePara'>
+        <div>
+          <p style={{ fontSize: 20}} className="homeFirst">This is my website. 
+          I may post random stuff here as my so called blogs. 
+          Read it once just to criticise :).
+          </p>
+        </div>
+        <div className='homeImg'>
+          <Image src="/images/dp2.jpg" height={300} width={300}/>
+        </div>
+      </div>
 
-      <a
-        href="https://github.com/ChangoMan/nextjs-typescript-mdx-blog"
-        className="inline-block px-7 py-3 rounded-md text-white dark:text-white bg-blue-600 hover:bg-blue-700 hover:text-white dark:hover:text-white"
-      >
-        Get the source code!
-      </a>
+      {/* <img src="public/images/dp.jpg"/> */}
 
-      {posts.map((post) => (
+      {/* {posts.map((post) => (
         <article key={post.slug} className="mt-12">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
@@ -48,7 +49,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
             </Link>
           </p>
         </article>
-      ))}
+      ))} */}
     </Layout>
   );
 };

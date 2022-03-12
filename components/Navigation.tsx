@@ -10,6 +10,9 @@ const Navigation = (): JSX.Element => {
       <Link href="/about">
         <a className="text-gray-900 dark:text-white px-6 py-4">About</a>
       </Link>
+      <a href="https://drive.google.com/file/d/1aXZaxbsJytJFZiFHltxpM75I494b4XoU/view?usp=sharing" target='_blank' rel="noreferrer">
+        <a className="text-gray-900 dark:text-white px-6 py-4">Resume</a>
+      </a>
     </nav>
   );
 };
