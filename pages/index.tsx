@@ -1,18 +1,18 @@
-// import { format, parseISO } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import { GetStaticProps } from 'next';
 import Image from 'next/image';
-// import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 import Layout from '../components/Layout';
 import { getAllPosts } from '../lib/api';
 
-// import { PostType } from '../types/post';
+import { PostType } from '../types/post';
 
-// type IndexProps = {
-//   posts: PostType[];
-// }; { posts }: IndexProps
+type IndexProps = {
+  posts: PostType[];
+};
 
-export const Index = (): JSX.Element => {
+export const Index = ( { posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
       <h1>Home</h1>
@@ -28,9 +28,7 @@ export const Index = (): JSX.Element => {
         </div>
       </div>
 
-      {/* <img src="public/images/dp.jpg"/> */}
-
-      {/* {posts.map((post) => (
+      {posts.map((post) => (
         <article key={post.slug} className="mt-12">
           <p className="mb-1 text-sm text-gray-500 dark:text-gray-400">
             {format(parseISO(post.date), 'MMMM dd, yyyy')}
@@ -49,7 +47,7 @@ export const Index = (): JSX.Element => {
             </Link>
           </p>
         </article>
-      ))} */}
+      ))}
     </Layout>
   );
 };
