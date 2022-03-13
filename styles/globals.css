@@ -157,3 +157,10 @@ pre {
 .homeImg>div{
   border-radius: 50%;
 }
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
