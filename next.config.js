@@ -1,4 +1,4 @@
-const isProd = process.env.NODE_ENV === "production";
+const basePath = process.env.NODE_ENV === 'production' ? '/ManasGupta1310.github.io' : '';
 
 module.exports = {
   /**
@@ -9,5 +9,6 @@ module.exports = {
     loader: 'imgix',
     path: '/',
   },
-  assetPrefix: isProd ? "/ManasGupta1310.github.io/" : "",
+  basePath,
+  assetPrefix: `${basePath}/`
 };
