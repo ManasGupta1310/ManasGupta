@@ -6,8 +6,8 @@
   "homepage": "https://ManasGupta1310.github.io",
   "scripts": {
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider; next dev",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; next build",
-    "export": "export NODE_OPTIONS=--openssl-legacy-provider; next export",
+    "build": "next build",
+    "export": "next export",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write .",
