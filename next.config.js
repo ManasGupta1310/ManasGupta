@@ -9,6 +9,5 @@ module.exports = {
     loader: 'imgix',
     path: '/',
   },
-  basePath,
   assetPrefix: `${basePath}/`
 };
