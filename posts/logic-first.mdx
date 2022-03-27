@@ -1,0 +1,72 @@
+---
+title: Logic - I
+description: Brief description about logic, propostional logic and Conjunctive Normal Form (CNF)
+date: '2022-03-14'
+---
+
+### What exactly is logic?
+Most of us have heard the word "Logic" in daily talks like "What is the logic behind this solution?" or "There's no logic in your statement!" and many more. Ever wondered what is this logic? And more importantly how it can be used in computer science, why is it studied in computer science? Curious enough now?
+
+So, lets just say **Logic** is a language of it's own. Not clear? Let me explain. Just like every other language, Logic has it's syntax and semantics. 
+> **Syntax** is the structure of the expression and symbols while **Semantics** is the meaning of those expression and symbols. 
+
+Logic is made up of different expressions which make up it's syntax and give meaning to it. Consider a statement:
+> If William gets a zero in his exams, then  he will fail.
+
+Now look at this statement:
+> If Sheryll gets late, then she will be fired from her job.
+
+Do you see something similar in these two sentences? Are not they presenting the same structure though their meanings and contexts are different? Lets give these sentence a common structure:
+> If P then Q
+
+Now it is clearly visible right?
+This is the basic notion behind **Propositional Logic**. We convert a statement to give it a logical form and reason about it.
+
+*Propositional Logic* is the logical method of joining different logical formulas to formally reason out and argument about something. 
+
+### Symbolic representation of Logic
+Now that we have a structure of logical language, we need to have definite symbols for it just like alphabets for the English language. The basic logical operations in computational logic are :
+
+- OR	$(\vee)$ 
+-  AND  $(\wedge)$
+- NOT	($\sim$)
+
+In the last example P and Q were the literals and these literals and symbols together form the logical formula. But **If**-**Then** can't be represented with the existing symbols so we have to add a symbol in order to represent it hence we add $\implies$.
+
+Now the earlier example can be represented as:
+> P$\implies$Q
+
+This now completes the *syntax* of our Logic.
+
+### Interpretation of Logical Formula
+Every literal can have a truth value i.e True or False and hence an interpretation of a logical formula can be formulated. Assigning truth values to literals may result in the logical formula proving True or False for different cases.
+
+A logical formula is 
+- **Satisfiable** if it can be true for some interpretations of formula.
+- **Valid** if it can be true for all interpretations of formula.
+- **Falsifiable** if it can be false for some interpretations of formula.
+- **Unsatisfiable** if it can be false for all interpretations of formula.
+
+This will be the *semantics* of our Logic
+
+### Different representative forms of Logical Formulas
+
+Now for different applications, logical formulas may be represented in different forms.
+- Conjunctive Normal Form (CNF)
+-  Disjunctive Normal Form (DNF)
+-  Negative Normal Form (NNF)
+
+Here I will briefly explain about the CNF.  CNF is  **AND of ORs** in short. 
+Lets take up an example: 
+> $(P\,\vee \sim Q$ $\vee R)$ $\wedge$ $(P\,\vee \sim R)$
+
+In this example the logical formula inside a bracket is called a clause. We are going to use this terminology from now on. So CNF is basically the conjunction i.e. AND of Clauses which are OR of literals.
+
+Now DNF is just the opposite of it. I guess you have got it.
+
+### Conclusion
+
+You now may have gotten a taste of what is logic in computer science, thought what is its use remains. We will look into that in some other blog. Keep on check for the next part. We will dig deeper into Logic and look at its use in Computer Science.
+
+
+> P.S.-  Would be glad to receive any feedback.
