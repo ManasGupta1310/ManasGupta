@@ -3,7 +3,6 @@
   "author": "@huntarosan",
   "license": "MIT",
   "version": "1.0.0",
-  "homepage": "https://ManasGupta1310.github.io",
   "scripts": {
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider; next dev",
     "build": "next build",
