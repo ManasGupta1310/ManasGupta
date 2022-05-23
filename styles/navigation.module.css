@@ -1,0 +1,13 @@
+.navMob{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .nav{
+        display: none;
+    }
+
+    .navMob{
+        display: flex;
+    }
+}
