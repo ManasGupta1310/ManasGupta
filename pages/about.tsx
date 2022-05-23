@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Image from 'next/image';
 import styles from "../styles/about.module.css";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
 
 export const About = (): JSX.Element => {
   return (
@@ -32,10 +36,10 @@ export const About = (): JSX.Element => {
       </div>
       <div className={styles.socials}>
         <ul>
-          <a href="https://github.com/ManasGupta1310" target="_blank" rel='noreferrer'><li><img src="https://img.icons8.com/nolan/50/github.png" alt="github" /></li></a>
-          <a href="https://www.instagram.com/__manasgupta__/" target="_blank" rel='noreferrer'><li><img src="https://img.icons8.com/nolan/50/instagram-new.png" alt="instagram" /></li></a>
-          <a href="https://linkedin.com/in/manasg20/" target="_blank" rel='noreferrer'><li><img src="https://img.icons8.com/nolan/50/linkedin.png" alt="linkedin" /></li></a>
-          <a href="mailto:manasg20@iitk.ac.in" target="_blank" rel='noreferrer'><li><img src="https://img.icons8.com/nolan/50/apple-mail.png" alt="mail" /></li></a>
+          <a href="https://github.com/ManasGupta1310" target="_blank" rel='noreferrer'><li><GitHubIcon sx={{ height: 50, width: 50}} className={styles.icons}/></li></a>
+          <a href="https://www.instagram.com/__manasgupta__/" target="_blank" rel='noreferrer'><li><InstagramIcon sx={{ height: 50, width: 50}} className={styles.icons}/></li></a>
+          <a href="https://linkedin.com/in/manasg20/" target="_blank" rel='noreferrer'><li><LinkedInIcon sx={{ height: 50, width: 50}} className={styles.icons}/></li></a>
+          <a href="mailto:manasg20@iitk.ac.in" target="_blank" rel='noreferrer'><li><EmailIcon sx={{ height: 50, width: 50}} className={styles.icons}/></li></a>
         </ul>
       </div>
     </Layout>

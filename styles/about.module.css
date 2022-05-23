@@ -32,7 +32,6 @@
     align-items: center;
   }
 
-
 @media (max-width: 768px) {
     .aboutPara{
         grid-template-columns: 100%;
