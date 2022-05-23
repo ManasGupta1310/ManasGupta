@@ -1,0 +1,48 @@
+.aboutPara{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .aboutFirst{
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .personalImg>div{
+    border-radius: 50%;
+  }
+  
+  .socials ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .socials ul li{
+    margin: 50px 20px;
+  }
+  
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+@media (max-width: 768px) {
+    .aboutPara{
+        grid-template-columns: 100%;
+    }
+
+    .personalImg{
+        grid-row:1;
+    }
+
+    .personalImg img{
+        width: 200px;
+    }
+}

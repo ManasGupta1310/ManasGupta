@@ -1,0 +1,29 @@
+.homePara{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    align-items: center;
+    justify-items: center;
+}
+
+.homeFirst{
+    width: 90%;
+    padding: 10px;
+  }
+  
+.homeImg>div{
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .homePara{
+        grid-template-columns: 100%;
+    }
+
+    .homeImg{
+        grid-row:1;
+    }
+
+    .homeImg img{
+        width: 200px;
+    }
+}
