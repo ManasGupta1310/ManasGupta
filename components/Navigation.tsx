@@ -13,6 +13,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 import InfoIcon from '@mui/icons-material/Info';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import ArticleIcon from '@mui/icons-material/Article';
 import { Divider } from '@mui/material';
 
 const links = [
@@ -92,6 +93,14 @@ const Navigation = (): JSX.Element => {
                     </ListItemButton>
                   </ListItem>
                 ))}
+                <ListItem disablePadding>
+                  <ListItemButton href="https://drive.google.com/file/d/1aXZaxbsJytJFZiFHltxpM75I494b4XoU/view?usp=sharing" target='_blank' rel="noreferrer">
+                    <ListItemIcon sx={{color:'gray'}}>
+                      <ArticleIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Resume" sx={{textDecoration: 'none'}} className="text-gray-900 dark:text-white"/>
+                  </ListItemButton>
+                </ListItem>
               </List>
               <Divider/>
             </Box>
