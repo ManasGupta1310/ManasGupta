@@ -28,10 +28,15 @@ export const About = (): JSX.Element => {
              <br/>
             Having managed to get through my first year, I had learned various things
             during that time.
+            <br/>
+            <br/>
+            I am interested in WebDev and ML and I frequently involve myself in Competitive Programming. Delving deep to solve 
+            some lame or some fascinating problem si really the sort of thing I am looking for. Do ping me to discuss with me anything 
+            on <a href="https://discord.com/users/773450115930914816" target="_blank" rel="noreferrer">Discord</a> or whatever socials.
           </p>
         </div>
         <div className={styles.personalImg}>
-          <Image src="/images/dp.jpg" width={300} height={300} />
+          <Image src="/images/dp2.jpg" width={300} height={300} />
         </div>
       </div>
       <div className={styles.socials}>

@@ -26,7 +26,7 @@ export const Index = ( { posts }: IndexProps): JSX.Element => {
           </p>
         </div>
         <div className={styles.homeImg}>
-          <Image src="/images/dp2.jpg" height={300} width={300}/>
+          <Image src="/images/dp.jpg" height={300} width={300}/>
         </div>
       </div>
 
