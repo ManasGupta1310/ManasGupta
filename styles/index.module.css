@@ -1,7 +1,7 @@
 .homePara{
     display: grid;
     grid-template-columns: 60% 30%;
-    align-items: center;
+    align-items: flex-start;
     justify-items: center;
 }
 

@@ -20,9 +20,12 @@ export const Index = ( { posts }: IndexProps): JSX.Element => {
       <h1>Home</h1>
       <div className={styles.homePara}>
         <div>
-          <p style={{ fontSize: 20}} className={styles.homeFirst}>This is my website. 
+          <p style={{ fontSize: 18}} className={styles.homeFirst}>This is my website. 
           I may post random stuff here as my so called blogs. 
           Read it once just to criticise :).
+          <br/>
+          <br/>
+          Take a look at my <Link href="/projects">projects</Link> once and do give your valuable feedback.
           </p>
         </div>
         <div className={styles.homeImg}>

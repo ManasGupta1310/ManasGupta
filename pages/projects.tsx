@@ -40,15 +40,16 @@ export const Projects = (): JSX.Element => {
         <div className={styles.projects}>
           {projects.map((project, index) => (
             <div className={styles.project} key={index}>
-              <Card sx={{ maxWidth: 300, border: 1}} className="bg-white dark:bg-black text-gray-900 dark:text-white vsc-initialized">
+              <Card sx={{ maxWidth: 335, border:1, borderColor: '#ECF0F1'}} className="bg-white dark:bg-black text-gray-900 dark:text-white vsc-initialized">
                 <CardMedia
                   component="img"
                   image={project.img}
                   alt="storeit"
                   sx={{height: 200}}
+                  className={styles.projectImg}
                 />
-                <CardContent sx={{ padding: 3}}>
-                  <Typography gutterBottom variant="h5" component="div" className="text-gray-900 dark:text-white">
+                <CardContent sx={{ padding: 2}}>
+                  <Typography gutterBottom variant="h5" sx={{fontWeight: 'bold'}} component="div" className="text-gray-900 dark:text-white">
                     {project.title}
                   </Typography>
                   <Typography variant="body2" className="text-gray-900 dark:text-white">
