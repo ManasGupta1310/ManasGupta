@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import InfoIcon from '@mui/icons-material/Info';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ArticleIcon from '@mui/icons-material/Article';
+import CallIcon from '@mui/icons-material/Call';
 import { Divider } from '@mui/material';
 
 const links = [
@@ -32,6 +33,12 @@ const links = [
     href: '/projects',
     icon: <AccountTreeIcon />,
   },
+  {
+    name: 'Contact',
+    href: '/contact',
+    icon: <CallIcon />,
+  },
+
 ]
 
 const Navigation = (): JSX.Element => {
@@ -55,15 +62,11 @@ const Navigation = (): JSX.Element => {
   return (
     <div>
       <nav className={styles.nav}>
-        <Link href="/">
-          <a className="text-gray-900 dark:text-white pr-6 py-4">Home</a>
-        </Link>
-        <Link href="/about">
-          <a className="text-gray-900 dark:text-white px-6 py-4">About</a>
-        </Link>
-        <Link href="/projects">
-          <a className="text-gray-900 dark:text-white px-6 py-4">Projects</a>
-        </Link>
+        {links.map((link, index)=>(
+          <Link href={link.href} key={index}>
+            <a className="text-gray-900 dark:text-white px-6 py-4">{link.name}</a>
+          </Link>
+        ))}
         <a href="https://drive.google.com/file/d/1aXZaxbsJytJFZiFHltxpM75I494b4XoU/view?usp=sharing" target='_blank' rel="noreferrer">
           <a className="text-gray-900 dark:text-white px-6 py-4">Resume</a>
         </a>
