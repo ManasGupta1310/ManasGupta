@@ -60,14 +60,15 @@ const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
-
+  const math = require('remark-math');
+  const katex = require('rehype-katex');
   const { content, data } = matter(source);
 
   const mdxSource = await serialize(content, {
     // Optionally pass remark/rehype plugins
     mdxOptions: {
-      remarkPlugins: [require('remark-code-titles')],
-      rehypePlugins: [mdxPrism, rehypeSlug, rehypeAutolinkHeadings],
+      remarkPlugins: [require('remark-code-titles'), math],
+      rehypePlugins: [mdxPrism, rehypeSlug, rehypeAutolinkHeadings, katex],
     },
     scope: data,
   });

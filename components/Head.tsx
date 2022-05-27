@@ -27,6 +27,12 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta property="og:description" content={meta.description} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:image" content={meta.image} />
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+      integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
+      crossOrigin="anonymous"
+    />
       {/* <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@huntarosan" />
       <meta name="twitter:title" content={meta.title} />
