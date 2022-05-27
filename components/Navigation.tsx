@@ -29,6 +29,11 @@ const links = [
     icon: <InfoIcon />,
   },
   {
+    name: 'Blogs',
+    href: '/blogs',
+    icon: <ArticleIcon />,
+  },
+  {
     name: 'Projects',
     href: '/projects',
     icon: <AccountTreeIcon />,
