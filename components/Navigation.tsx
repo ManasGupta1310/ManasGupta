@@ -43,6 +43,11 @@ const links = [
     href: '/contact',
     icon: <CallIcon />,
   },
+  {
+    name: 'Resume',
+    href: '/Resume.pdf',
+    icon: <ArticleIcon />,
+  }
 
 ]
 
@@ -72,9 +77,6 @@ const Navigation = (): JSX.Element => {
             <a className="text-gray-900 dark:text-white px-6 py-4">{link.name}</a>
           </Link>
         ))}
-        <a href="https://drive.google.com/file/d/1aXZaxbsJytJFZiFHltxpM75I494b4XoU/view?usp=sharing" target='_blank' rel="noreferrer">
-          <a className="text-gray-900 dark:text-white px-6 py-4">Resume</a>
-        </a>
       </nav>
       <div className={styles.navMob}>
           <Button onClick={toggleDrawer(true)} sx={{padding:0}}><MenuIcon className="text-gray-900 dark:text-white" sx={{ opacity:'50%'}}/></Button>
@@ -101,14 +103,6 @@ const Navigation = (): JSX.Element => {
                     </ListItemButton>
                   </ListItem>
                 ))}
-                <ListItem disablePadding>
-                  <ListItemButton href="https://drive.google.com/file/d/1aXZaxbsJytJFZiFHltxpM75I494b4XoU/view?usp=sharing" target='_blank' rel="noreferrer">
-                    <ListItemIcon sx={{color:'gray'}}>
-                      <ArticleIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Resume" sx={{textDecoration: 'none'}} className="text-gray-900 dark:text-white"/>
-                  </ListItemButton>
-                </ListItem>
               </List>
               <Divider/>
             </Box>
