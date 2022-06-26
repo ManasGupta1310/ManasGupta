@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Image from 'next/image';
 import styles from "../styles/about.module.css";
 
 export const About = (): JSX.Element => {
@@ -29,9 +28,6 @@ export const About = (): JSX.Element => {
             I am interested in WebDev and ML and I frequently involve myself in Competitive Programming. Delving deep to solve 
             some lame or some fascinating problem si really the sort of thing I am looking for.
           </p>
-        </div>
-        <div className={styles.personalImg}>
-          <Image src="/images/dp2.jpg" width={300} height={300} />
         </div>
       </div>
     </Layout>
