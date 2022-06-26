@@ -8,9 +8,7 @@ import { styled } from '@mui/material/styles';
 
 const CustomButton = styled(Button)<ButtonProps>(() => ({
   color: grey[100],
-  backgroundColor: grey[900],
   '&:hover': {
-    backgroundColor: grey[800],
     color: grey[100],
   },
 }));
@@ -56,7 +54,7 @@ export const Projects = (): JSX.Element => {
                         {project.desc}
                       </div>
                       <div className={styles.cardLink}>
-                        <CustomButton variant="contained" color="primary" href={project.href} sx={{borderRadius: 2}}>Here<ArrowForwardIcon/></CustomButton>
+                        <CustomButton variant="text" href={project.href}><ArrowForwardIcon/></CustomButton>
                       </div>
                   </div>
               </div>
